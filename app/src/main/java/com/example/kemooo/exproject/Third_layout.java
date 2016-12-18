@@ -74,7 +74,7 @@ public class Third_layout extends AppCompatActivity {
             runOnUiThread(new Runnable() {
                 public void run() {
 
-                    if (page > 4) { // In my case the number of pages are 5
+                    if (page > second_layout.kemo.length) { // In my case the number of pages are 5
                         timer.cancel();
                         // Showing a toast for just testing purpose
                         Toast.makeText(getApplicationContext(), "Timer stoped",

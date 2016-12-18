@@ -59,12 +59,11 @@ public class CustomSwipeAdapter extends PagerAdapter {
         layoutInflater=(LayoutInflater)ctx.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View item_view=layoutInflater.inflate(R.layout.image,container,false);
         ImageView imageView=(ImageView)item_view.findViewById(R.id.image_view);
-        textView=(TextView)item_view.findViewById(R.id.image_count);
-        Toast.makeText(ctx, second_layout.kemo[position], Toast.LENGTH_SHORT).show();
+
         imageView.setImageResource(second_layout.kemo[position]);
 
         int pos= position+1;
-        textView.setText("image : "+pos);
+//        textView.setText("image : "+pos);
         container.addView(item_view);
 
 
